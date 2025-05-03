@@ -25,7 +25,7 @@ def main():
                 calc_counter += 1
             else: 
                 print(f'{answer} is wrong answer ;(. Correct answer is {summ}')
-                print("Let's try again, {name}!")
+                print(f"Let's try again, {name}!")
                 return
 
         elif random_mention == '-':
@@ -35,7 +35,7 @@ def main():
                 calc_counter += 1
             else: 
                 print(f'{answer} is wrong answer ;(. Correct answer is {diff}')
-                print("Let's try again, {name}!")
+                print(f"Let's try again, {name}!")
                 return
 
         elif random_mention == '*':
@@ -46,7 +46,7 @@ def main():
             else: 
                 print(f'{answer} is wrong answer ;(. '
                 f'Correct answer is {multiplication}')
-                print("Let's try again, {name}!")
+                print(f"Let's try again, {name}!")
             return
     if calc_counter == 3:
         print(f"Congratulations, {name}!") 
