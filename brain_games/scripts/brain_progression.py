@@ -1,6 +1,6 @@
 from random import choice, randint
 
-from prompt_toolkit import prompt
+import prompt
 
 
 def brain_progression(name):
@@ -27,7 +27,7 @@ def brain_progression(name):
     print('What number is missing in the progression?')
     print(f'Question: {list_range}')
 
-    answer = prompt('Your answer: ')
+    answer = prompt.string('Your answer: ')
 
     if int(answer) == choose_number:
         print('Correct!')

@@ -1,6 +1,6 @@
 from random import randint
 
-from prompt_toolkit import prompt
+import prompt
 
 
 def brain_prime(name):
@@ -9,7 +9,7 @@ def brain_prime(name):
 
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     print(f'Question: {number}')
-    answer = prompt('Your answer: ')
+    answer = prompt.string('Your answer: ')
 
     for i in range(number):
         if number % i == 0:

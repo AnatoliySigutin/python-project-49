@@ -1,6 +1,6 @@
 from random import choice, randint
 
-from prompt_toolkit import prompt
+import prompt
 
 
 def brain_calc(name):
@@ -10,7 +10,7 @@ def brain_calc(name):
     random_mention = choice(list_mention)
     print('What is the result of the expression?')
     print(f'Question: {x_1} {random_mention} {x_2}')
-    answer = prompt('Your answer: ')
+    answer = prompt.string('Your answer: ')
 
     if random_mention == '+':
         summ = x_1 + x_2

@@ -1,6 +1,6 @@
 from random import randint
 
-from prompt_toolkit import prompt
+import prompt
 
 
 def brain_gcd(name):
@@ -10,7 +10,7 @@ def brain_gcd(name):
     print('Find the greatest common divisor of given numbers.')
     print('Question: {x_1} {x_2}')
 
-    answer = prompt('Your answer: ')
+    answer = prompt.string('Your answer: ')
 
     correct_answer = node_gcd(x_1, x_2)
 

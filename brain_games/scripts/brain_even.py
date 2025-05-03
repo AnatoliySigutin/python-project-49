@@ -1,6 +1,6 @@
 from random import randint
 
-from prompt_toolkit import prompt
+import prompt
 
 
 def brain_even(name):
@@ -11,7 +11,7 @@ def brain_even(name):
     while counter_1 < total_required:    
         x = randint(1, 100)
         print(f'Question: {x}')
-        answer = prompt('Your answer: ')
+        answer = prompt.string('Your answer: ')
 
         if x % 2 == 0 and answer == 'yes':
             print('Correct!')
