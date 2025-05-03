@@ -1,9 +1,11 @@
 from random import choice, randint
-
+from brain_games.cli import welcome_user
 import prompt
 
 
-def brain_calc(name):
+def main():
+    name = welcome_user()
+
     x_1 = randint(1, 100)
     x_2 = randint(1, 100)
     list_mention = ['+', '-', '*', '/']
@@ -19,6 +21,7 @@ def brain_calc(name):
         else: 
             print(f'{answer} is wrong answer ;(. Correct answer is {summ}')
             print("Let's try again, {name}!")
+            return
 
     elif random_mention == '-':
         diff = x_1 - x_2
@@ -27,6 +30,7 @@ def brain_calc(name):
         else: 
             print(f'{answer} is wrong answer ;(. Correct answer is {diff}')
             print("Let's try again, {name}!")
+            return
 
     elif random_mention == '*':
         multiplication = x_1 * x_2
@@ -36,6 +40,7 @@ def brain_calc(name):
             print(f'{answer} is wrong answer ;(. '
       f'Correct answer is {multiplication}')
             print("Let's try again, {name}!")
+            return
     
     elif random_mention == '/':
         division = x_1 / x_2
@@ -44,6 +49,11 @@ def brain_calc(name):
         else: 
             print(f'{answer} is wrong answer ;(. Correct answer is {division}')
             print("Let's try again, {name}!")
+            return
+
+
+if __name__ == '__main__':
+     main()
     
 
     
