@@ -8,7 +8,7 @@ def main():
 
     x_1 = randint(1, 100)
     x_2 = randint(1, 100)
-    list_mention = ['+', '-', '*', '/']
+    list_mention = ['+', '-', '*']
     random_mention = choice(list_mention)
     print('What is the result of the expression?')
     print(f'Question: {x_1} {random_mention} {x_2}')
@@ -42,14 +42,6 @@ def main():
             print("Let's try again, {name}!")
             return
     
-    elif random_mention == '/':
-        division = x_1 / x_2
-        if division == int(answer):
-            print('Correct!')
-        else: 
-            print(f'{answer} is wrong answer ;(. Correct answer is {division}')
-            print("Let's try again, {name}!")
-            return
 
 
 if __name__ == '__main__':
