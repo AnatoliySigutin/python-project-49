@@ -49,7 +49,7 @@ def main():
                 f'Correct answer is {multiplication}')
                 print(f"Let's try again, {name}!")
             return
-    if calc_counter == 3:
+        
         print(f"Congratulations, {name}!") 
 
 
