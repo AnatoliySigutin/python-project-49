@@ -1,5 +1,7 @@
-from random import randint, choice
+from random import choice, randint
+
 from prompt_toolkit import prompt
+
 
 def brain_calc(name):
     x_1 = randint(1, 100)
@@ -31,7 +33,8 @@ def brain_calc(name):
         if multiplication == int(answer):
             print('Correct!')
         else: 
-            print(f'{answer} is wrong answer ;(. Correct answer is {multiplication}')
+            print(f'{answer} is wrong answer ;(. '
+      f'Correct answer is {multiplication}')
             print("Let's try again, {name}!")
     
     elif random_mention == '/':

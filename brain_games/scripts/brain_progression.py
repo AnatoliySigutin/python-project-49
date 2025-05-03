@@ -1,4 +1,5 @@
-from random import randint, choice
+from random import choice, randint
+
 from prompt_toolkit import prompt
 
 
@@ -8,18 +9,15 @@ def brain_progression(name):
     if x_2 <= x_1 + 10:
         x_2 = x_1 + 15
 
-
     list_range = []
     x_step = randint(1, 5)
 
     max_length = 10  
     current = x_1
 
-    
     while current <= x_2 and len(list_range) < max_length:
         list_range.append(current)
         current += x_step
-
 
     choose_index = choice(range(len(list_range)))
     choose_number = list_range[choose_index] 

@@ -1,4 +1,5 @@
 from random import randint
+
 from prompt_toolkit import prompt
 
 
@@ -19,8 +20,10 @@ def brain_gcd(name):
         print(f'Wrong. The correct answer is {correct_answer}.')
         print(f"Let's try again, {name}")
 
+
 # Вызов функции (например, с именем пользователя)
 brain_gcd('User')
+
 
 def node_gcd(x_1, x_2):
     while x_1 != 0 and x_2 != 0:

@@ -1,4 +1,5 @@
 from random import randint
+
 from prompt_toolkit import prompt
 
 

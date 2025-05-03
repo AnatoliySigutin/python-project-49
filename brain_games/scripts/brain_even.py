@@ -1,5 +1,7 @@
 from random import randint
+
 from prompt_toolkit import prompt
+
 
 def brain_even(name):
     counter_1 = 0
