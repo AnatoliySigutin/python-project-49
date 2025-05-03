@@ -48,7 +48,7 @@ def main():
                 print(f'{answer} is wrong answer ;(. '
                 f'Correct answer is {multiplication}')
                 print(f"Let's try again, {name}!")
-            return
+                return
         
         print(f"Congratulations, {name}!") 
 
