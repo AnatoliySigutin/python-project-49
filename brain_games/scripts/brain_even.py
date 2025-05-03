@@ -3,7 +3,10 @@ import prompt
 from brain_games.cli import welcome_user
 
 
-def main(name):
+def main():
+    name = welcome_user()
+
+
     counter_1 = 0
     print('Answer "yes" if the number is even, otherwise answer "no".')
     total_required = 3
@@ -36,4 +39,4 @@ def main(name):
 
 
 if __name__ == '__main__':
-    main()     
+     main()
