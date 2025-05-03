@@ -1,9 +1,9 @@
 from random import randint
-
 import prompt
+from brain_games.cli import welcome_user
 
 
-def brain_even(name):
+def main(name):
     counter_1 = 0
     print('Answer "yes" if the number is even, otherwise answer "no".')
     total_required = 3
@@ -16,11 +16,24 @@ def brain_even(name):
         if x % 2 == 0 and answer == 'yes':
             print('Correct!')
             counter_1 += 1
+
         elif x % 2 != 0 and answer == 'no':
             print('Correct!')
             counter_1 += 1
-        else:
-            print('Wrong! Try again.')
-            counter_1 = 0
+
+        elif x % 2 != 0 and answer == 'yes':
+            print(f"{answer} is wrong answer ;(. Correct answer was 'no'.")
+            print(f"Let's try again, {name}!")
+            return
+
+        elif x % 2 == 0 and answer == 'no': 
+            print(f"{answer} is wrong answer ;(. Correct answer was 'yes'.")
+            print(f"Let's try again, {name}!")
+            return
+
     if counter_1 == 3:
         print(f"Congratulations, {name}!")
+
+
+if __name__ == '__main__':
+    main()     
