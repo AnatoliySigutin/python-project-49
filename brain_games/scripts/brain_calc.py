@@ -50,7 +50,7 @@ def main():
                 print(f"Let's try again, {name}!")
                 return
         
-        print(f"Congratulations, {name}!") 
+    print(f"Congratulations, {name}!") 
 
 
 if __name__ == '__main__':
