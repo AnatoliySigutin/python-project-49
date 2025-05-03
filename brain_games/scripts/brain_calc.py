@@ -9,15 +9,16 @@ def main():
     max_counter = 3
 
 
-    x_1 = randint(1, 100)
-    x_2 = randint(1, 100)
-    list_mention = ['+', '-', '*']
-    random_mention = choice(list_mention)
     print('What is the result of the expression?')
-    print(f'Question: {x_1} {random_mention} {x_2}')
-    answer = prompt.string('Your answer: ')
 
     while calc_counter < max_counter:
+        x_1 = randint(1, 100)
+        x_2 = randint(1, 100)
+        list_mention = ['+', '-', '*']
+        random_mention = choice(list_mention)
+        print(f'Question: {x_1} {random_mention} {x_2}')
+        answer = prompt.string('Your answer: ')
+
         if random_mention == '+':
             summ = x_1 + x_2
             if summ == int(answer):
