@@ -31,8 +31,9 @@ def main():
         choose_number = list_range[choose_index] 
 
         list_range[choose_index] = '..'
+        question_string = ' '.join(map(str, list_range))
 
-        print(f'Question: {list_range}')
+        print(f'Question: {question_string}')
 
         answer = prompt.string('Your answer: ')
 
