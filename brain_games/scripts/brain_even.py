@@ -17,21 +17,12 @@ def main():
         print(f'Question: {x}')
         answer = prompt.string('Your answer: ')
 
-        if x % 2 == 0 and answer == 'yes':
+        if x % 2 == 0 and answer == 'yes' or x % 2 != 0 and answer == 'no':
             print('Correct!')
             counter_1 += 1
 
-        elif x % 2 != 0 and answer == 'no':
-            print('Correct!')
-            counter_1 += 1
-
-        elif x % 2 != 0 and answer == 'yes':
+        elif x % 2 != 0 and answer == 'yes' or x % 2 == 0 and answer == 'no':
             print(f"{answer} is wrong answer ;(. Correct answer was 'no'.")
-            print(f"Let's try again, {name}!")
-            return
-
-        elif x % 2 == 0 and answer == 'no': 
-            print(f"{answer} is wrong answer ;(. Correct answer was 'yes'.")
             print(f"Let's try again, {name}!")
             return
 

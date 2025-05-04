@@ -9,6 +9,7 @@ def main():
     name = welcome_user()
     calc_counter = 0
     max_counter = 3
+    right_answer = 'Correct!'
 
     print('What is the result of the expression?')
 
@@ -23,7 +24,7 @@ def main():
         if random_mention == '+':
             summ = x_1 + x_2
             if summ == int(answer):
-                print('Correct!')
+                print(f'{right_answer}')
                 calc_counter += 1
             else: 
                 print(f'{answer} is wrong answer ;(. Correct answer is {summ}')
@@ -33,7 +34,7 @@ def main():
         elif random_mention == '-':
             diff = x_1 - x_2
             if diff == int(answer):
-                print('Correct!')
+                print(f'{right_answer}')
                 calc_counter += 1
             else: 
                 print(f'{answer} is wrong answer ;(. Correct answer is {diff}')
@@ -43,7 +44,7 @@ def main():
         elif random_mention == '*':
             multiplication = x_1 * x_2
             if multiplication == int(answer):
-                print('Correct!')
+                print(f'{right_answer}')
                 calc_counter += 1
             else: 
                 print(f'{answer} is wrong answer ;(. '
