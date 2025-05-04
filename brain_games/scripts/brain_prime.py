@@ -25,9 +25,11 @@ def main():
 
         if division_counter == 2 and answer == 'yes':
             print('Correct!')
+            prime_counter += 1
 
         elif division_counter >= 2 and answer == 'no':
             print('Correct!')
+            prime_counter += 1
 
         elif division_counter >= 2 and answer == 'yes': 
             print(f"{answer} is wrong answer ;(. Correct answer is 'no' ")
