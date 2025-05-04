@@ -26,8 +26,6 @@ def main():
         elif random_mention == '*':
             correct_answer = x_1 * x_2
 
-
-
         print(f'Question: {x_1} {random_mention} {x_2}')
         answer = prompt.string('Your answer: ')
 
