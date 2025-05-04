@@ -1,12 +1,14 @@
 from random import randint
+
 import prompt
+
 from brain_games.cli import welcome_user
+
 
 def main():
     name = welcome_user()
     gcd_counter = 0
     max_counter = 3
-
 
     print('Find the greatest common divisor of given numbers.')
 
@@ -32,9 +34,8 @@ def main():
 
 
 if __name__ == '__main__':
-     main()
+    main()
     
-
 
 def node_gcd(x_1, x_2):
     while x_1 != 0 and x_2 != 0:

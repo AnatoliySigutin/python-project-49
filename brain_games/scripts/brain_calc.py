@@ -1,13 +1,14 @@
 from random import choice, randint
-from brain_games.cli import welcome_user
+
 import prompt
+
+from brain_games.cli import welcome_user
 
 
 def main():
     name = welcome_user()
     calc_counter = 0
     max_counter = 3
-
 
     print('What is the result of the expression?')
 
@@ -54,7 +55,7 @@ def main():
 
 
 if __name__ == '__main__':
-     main()
+    main()
     
 
     

@@ -1,6 +1,8 @@
 from random import choice, randint
-from brain_games.cli import welcome_user
+
 import prompt
+
+from brain_games.cli import welcome_user
 
 
 def main():
@@ -8,13 +10,11 @@ def main():
     prog_counter = 0
     max_counter = 3
 
-
     print('What number is missing in the progression?')
 
     while max_counter > prog_counter:
         x_1 = randint(1, 100)
         x_2 = randint(x_1 + 40, x_1 + 140)
-
 
         list_range = []
         x_step = randint(1, 7)
@@ -46,6 +46,7 @@ def main():
 
     print(f"Congratulations, {name}!")
 
+
 if __name__ == '__main__':
-     main()
+    main()
     

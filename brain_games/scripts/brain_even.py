@@ -1,11 +1,12 @@
 from random import randint
+
 import prompt
+
 from brain_games.cli import welcome_user
 
 
 def main():
     name = welcome_user()
-
 
     counter_1 = 0
     print('Answer "yes" if the number is even, otherwise answer "no".')
@@ -39,4 +40,4 @@ def main():
 
 
 if __name__ == '__main__':
-     main()
+    main()

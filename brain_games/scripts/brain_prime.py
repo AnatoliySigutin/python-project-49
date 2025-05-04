@@ -1,6 +1,8 @@
 from random import randint
-from brain_games.cli import welcome_user
+
 import prompt
+
+from brain_games.cli import welcome_user
 
 
 def main():
@@ -10,7 +12,6 @@ def main():
     max_counter = 3
 
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-
 
     while prime_counter < max_counter:
         number = randint(1, 100)
@@ -24,7 +25,6 @@ def main():
             if number % i == 0:
                 division_counter += 1
             
-
         if division_counter == 2 and answer == 'yes':
             print('Correct!')
             prime_counter += 1
@@ -47,4 +47,4 @@ def main():
 
 
 if __name__ == '__main__':
-     main()
+    main()
