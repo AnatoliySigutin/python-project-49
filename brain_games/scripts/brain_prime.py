@@ -15,9 +15,10 @@ def main():
     while prime_counter < max_counter:
         number = randint(1, 100)
         print(f'Question: {number}')
+        
         answer = prompt.string('Your answer: ')
 
-        for i in range(1, number):
+        for i in range(1, number+1):
             if number % i == 0:
                 division_counter += 1
             else:
@@ -27,11 +28,11 @@ def main():
             print('Correct!')
             prime_counter += 1
 
-        elif division_counter >= 2 and answer == 'no':
+        elif division_counter > 2 and answer == 'no':
             print('Correct!')
             prime_counter += 1
 
-        elif division_counter >= 2 and answer == 'yes': 
+        elif division_counter > 2 and answer == 'yes': 
             print(f"{answer} is wrong answer ;(. Correct answer is 'no' ")
             print("Let's try again, {name}!")
             return
