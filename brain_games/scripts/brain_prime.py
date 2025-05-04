@@ -35,12 +35,12 @@ def main():
 
         elif division_counter > 2 and answer == 'yes': 
             print(f"{answer} is wrong answer ;(. Correct answer is 'no' ")
-            print("Let's try again, {name}!")
+            print(f"Let's try again, {name}!")
             return
         
         elif division_counter == 2 and answer == 'no': 
             print(f"{answer} is wrong answer ;(. Correct answer is 'yes' ")
-            print("Let's try again, {name}!")
+            print(f"Let's try again, {name}!")
             return
         
     print(f"Congratulations, {name}!") 
