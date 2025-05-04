@@ -25,21 +25,12 @@ def main():
             if number % i == 0:
                 division_counter += 1
             
-        if division_counter == 2 and answer == 'yes':
+        if division_counter == 2 and answer == 'yes' or division_counter > 2 and answer == 'no':
             print('Correct!')
             prime_counter += 1
 
-        elif division_counter > 2 and answer == 'no':
-            print('Correct!')
-            prime_counter += 1
-
-        elif division_counter > 2 and answer == 'yes': 
+        elif division_counter > 2 and answer == 'yes' or division_counter == 2 and answer == 'no': 
             print(f"{answer} is wrong answer ;(. Correct answer is 'no' ")
-            print(f"Let's try again, {name}!")
-            return
-        
-        elif division_counter == 2 and answer == 'no': 
-            print(f"{answer} is wrong answer ;(. Correct answer is 'yes' ")
             print(f"Let's try again, {name}!")
             return
         
