@@ -18,39 +18,28 @@ def main():
         x_2 = randint(1, 100)
         list_mention = ['+', '-', '*']
         random_mention = choice(list_mention)
+
+        if random_mention == '+':
+            correct_answer = x_1 + x_2
+        elif random_mention == '-':
+            correct_answer = x_1 - x_2
+        elif random_mention == '*':
+            correct_answer = x_1 * x_2
+
+
+
         print(f'Question: {x_1} {random_mention} {x_2}')
         answer = prompt.string('Your answer: ')
 
-        if random_mention == '+':
-            summ = x_1 + x_2
-            if summ == int(answer):
-                print(f'{right_answer}')
-                calc_counter += 1
-            else: 
-                print(f'{answer} is wrong answer ;(. Correct answer is {summ}')
-                print(f"Let's try again, {name}!")
-                return
-
-        elif random_mention == '-':
-            diff = x_1 - x_2
-            if diff == int(answer):
-                print(f'{right_answer}')
-                calc_counter += 1
-            else: 
-                print(f'{answer} is wrong answer ;(. Correct answer is {diff}')
-                print(f"Let's try again, {name}!")
-                return
-
-        elif random_mention == '*':
-            multiplication = x_1 * x_2
-            if multiplication == int(answer):
-                print(f'{right_answer}')
-                calc_counter += 1
-            else: 
-                print(f'{answer} is wrong answer ;(. '
-                f'Correct answer is {multiplication}')
-                print(f"Let's try again, {name}!")
-                return
+        if int(answer) == correct_answer:
+            print(right_answer)
+            calc_counter += 1
+        
+        else: 
+            print(f'{answer} is wrong answer ;(. '
+            f'Correct answer is {multiplication}')
+            print(f"Let's try again, {name}!")
+            return
         
     print(f"Congratulations, {name}!") 
 
