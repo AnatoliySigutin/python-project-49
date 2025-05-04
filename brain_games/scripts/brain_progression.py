@@ -13,12 +13,11 @@ def main():
 
     while max_counter > prog_counter:
         x_1 = randint(1, 100)
-        x_2 = randint(1, 100)
-        if x_2 <= x_1 + 10:
-            x_2 = x_1 + 15
+        x_2 = randint(x_1 + 40, x_1 + 140)
+
 
         list_range = []
-        x_step = randint(1, 5)
+        x_step = randint(1, 7)
 
         max_length = 10  
         current = x_1
