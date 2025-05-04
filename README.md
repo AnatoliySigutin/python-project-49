@@ -5,5 +5,5 @@ https://asciinema.org/a/qhS91E7KZd00pxW2g9YAI0Zxs
 https://asciinema.org/a/7lHuqRS1DL0rQCMkHYmuUTGYc
 https://asciinema.org/a/vjcuTfDVXJDFzY5ONo2feeiun
 https://asciinema.org/a/H7MpJcH9ByOo4z8gfVLIyTMAw
-https://sonarcloud.io/project/overview?id=AnatoliySigutin_python-project-49
+https://sonarcloud.io/api/project_badges/measure?project=AnatoliySigutin_python-project-49&metric=sqale_rating
 [![hexlet-check](https://github.com/AnatoliySigutin/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/AnatoliySigutin/python-project-49/actions/workflows/hexlet-check.yml)
