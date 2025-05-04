@@ -17,7 +17,7 @@ def main():
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
 
-        for i in range(number):
+        for i in range(1, number):
             if number % i == 0:
                 division_counter += 1
             else:
