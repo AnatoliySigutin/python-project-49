@@ -25,7 +25,7 @@ def main():
             gcd_counter += 1
         else:
             print(f'Wrong. The correct answer is {correct_answer}.')
-            print(f"Let's try again, {name}")
+            print(f"Let's try again, {name}!")
             return
 
     print(f"Congratulations, {name}!") 
