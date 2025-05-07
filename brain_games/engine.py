@@ -3,7 +3,7 @@ from brain_games import cli
 import prompt
 
 
-def start_game(game_module):
+def run_game(game_module):
 
     name = cli.welcome_user()
 
