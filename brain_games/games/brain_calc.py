@@ -2,6 +2,7 @@ import random
 
 DESCRIPTION = 'What is the result of the expression?'
 
+
 def generate_round():
 
     num1 = random.randint(1, 100)

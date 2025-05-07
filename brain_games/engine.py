@@ -1,6 +1,7 @@
-from brain_games.constants import MAX_ROUNDS
-from brain_games import cli
 import prompt
+
+from brain_games import cli
+from brain_games.constants import MAX_ROUNDS
 
 
 def run_game(generate_round_function, description):
