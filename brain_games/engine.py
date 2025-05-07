@@ -3,15 +3,15 @@ from brain_games import cli
 import prompt
 
 
-def run_game(game_module):
+def run_game(generate_round_function, description):
 
     name = cli.welcome_user()
 
-    print(game_module.DESCRIPTION)
+    print(description)
 
     wins_count = 0
     while wins_count < MAX_ROUNDS:
-        question, correct_answer = game_module.generate_round()
+        question, correct_answer = generate_round_function()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
 
