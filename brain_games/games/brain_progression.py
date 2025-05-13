@@ -5,11 +5,11 @@ DESCRIPTION = 'What number is missing in the progression?'
 
 def generate_round():
     
-    x_1 = random.randint(1, 100)  #//NOSONAR
-    x_step = random.randint(1, 7)  #//NOSONAR
+    x_1 = random.randint(1, 100)  #  //NOSONAR
+    x_step = random.randint(1, 7)  #  //NOSONAR
     max_length = 10
     min_x_2 = x_1 + (max_length - 1) * x_step
-    x_2 = random.randint(max(x_1 + 40, min_x_2), x_1 + 140)  #//NOSONAR
+    x_2 = random.randint(max(x_1 + 40, min_x_2), x_1 + 140)  #  //NOSONAR
 
     question, correct_answer = progression(x_1, x_2, x_step)
 
@@ -31,7 +31,7 @@ def progression(x_1, x_2, x_step):
     if not list_range:
         return "", ""
 
-    choose_index = random.choice(range(len(list_range)))  #//NOSONAR
+    choose_index = random.choice(range(len(list_range)))  #  //NOSONAR
     choose_number = list_range[choose_index]
 
     question_list = list(list_range)
