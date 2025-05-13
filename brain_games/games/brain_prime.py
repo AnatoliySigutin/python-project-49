@@ -4,7 +4,7 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def generate_round(): 
-    number = random.randint(1, 100) #//  NOSONAR
+    number = random.randint(1, 100)  # //  NOSONAR
     question = f'{number}'
     correct_answer = 'yes' if is_prime(number) else 'no'
     return question, correct_answer
