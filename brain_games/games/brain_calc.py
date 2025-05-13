@@ -5,9 +5,9 @@ DESCRIPTION = 'What is the result of the expression?'
 
 def generate_round():
 
-    num1 = random.randint(1, 100)
-    num2 = random.randint(1, 100)
-    operator = random.choice(['+', '-', '*'])
+    num1 = random.randint(1, 100)  #//NOSONAR 
+    num2 = random.randint(1, 100)   #//NOSONAR
+    operator = random.choice(['+', '-', '*'])   #//NOSONAR
 
     if operator == '+':
         result = num1 + num2
